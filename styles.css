@@ -2,8 +2,8 @@
 @import url(//db.onlinewebfonts.com/c/50cd2aad9c8f35800bb6beac3ad42f16?family=Azonix);
 @font-face {font-family: "Azonix"; src: url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.eot"); src: url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.woff") format("woff"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.svg#Azonix") format("svg"); }
 :root {
-  --banner-bg-start: #fdd4e9;
-  --banner-bg-end: #f6deff;
+  --banner-bg-start: #e0d4fd;
+  --banner-bg-end: #e9deff;
   --produce-gray: #e4e4e4;
   --search-text-gray: #949494;
   --search-gray: #f2f2f2;
@@ -54,12 +54,12 @@ body {
 }
 #banner-title {
   font-family: 'Azonix', sans-serif;
-  color:#7f1774;
+  color:#63177f;
   font-size: 16px;
 }
 #banner-subtitle {
   font-family: 'Azonix', sans-serif;
-  color: #e364d5;
+  color: #8464e3;
   font-size: 12px;
 }
 

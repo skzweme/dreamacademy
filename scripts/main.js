@@ -261,7 +261,7 @@ function populateRankingEntry(trainee, currRank) {
       </div>
       <div class="ranking__entry-icon-badge bg-${trainee.grade.toLowerCase()}">${currRank}</div>
       ${
-        top6 ? '<div class="ranking__entry-icon-crown"></div>' : ''
+        top9 ? '<div class="ranking__entry-icon-crown"></div>' : ''
       }
     </div>
     <div class="ranking__row-text">
@@ -313,43 +313,6 @@ function swapTrainees(index1, index2) {
   rerenderRanking();
 }
 
-// Controls alternate ways to spell trainee names
-// to add new entries use the following format:
-// <original>: [<alternate1>, <alternate2>, <alternate3>, etc...]
-// <original> is the original name as appearing on csv
-// all of it should be lower case
-const alternateRomanizations = {
-  'suh jimin': ['seo jimin'],
-  'an jeongmin': ['an jungmin', 'ahn jeongmin', 'ahn jungmin'],
-  'lee rayeon': ['lee nayeon'],
-  'you dayeon': ['yoo dayeon'],
-  'huh jiwon': ['heo jiwon'],
-  'sim seungeun': ['shim seungeun'],
-  'xu ziyin': ['roada'],
-  'su ruiqi': ['sury'],
-  'leung cheukying': ['cherry', 'liang zhuoying', 'cherena', 'lyeong choging'],
-  'fu yaning': ['jessie'],
-  'guinn myah': ['son maya'],
-  'hsu nientzu': ['nancy'],
-  'kim doah': ['doa'],
-  'cui wenmeixiu': ['mei'],
-  'huang xingqiao': ['lorina'],
-  'wang yale': ['yealy'],
-  'chen hsinwei': ['vivi'],
-  'zhang luofei': ['dolly'],
-  'wen zhe': ['shirley'],
-  'liu yuhan': ['sweety'],
-  'poon wingchi': ['gigi'],
-  'xu ruowei': ['helen'],
-  'joung min': ['jeong min'],
-  'lee chaeyun': ['lee chaeyoon'],
-  'lee yunji': ['lee yoonji'],
-  'kim suyeon': ['kim sooyeon'],
-  'seo youngeun': ['suh youngeun'],
-  'choi yujin': ['choi yoojin'],
-  'lee sunwoo': ['lee sunoo'],
-  'lee yeongyung': ['lee yungyung', 'lee yeongyeong']
-};
 
 // uses the current filter text to create a subset of trainees with matching info
 function filterTrainees(event) {

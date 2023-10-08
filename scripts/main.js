@@ -321,14 +321,15 @@ function filterTrainees(event) {
   filteredTrainees = trainees.filter(function (trainee) {
     let initialMatch = includesIgnCase(trainee.name_romanized, filterText) || includesIgnCase(trainee.company, filterText);
     // if alernates exists then check them as well
-    let alternateMatch = false;
+    // let alternateMatch = false;
     // let alternates = alternateRomanizations[trainee.name_romanized.toLowerCase()]
     //if (alternates) {
     //  for (let i = 0; i < alternates.length; i++) {
     //    alternateMatch = alternateMatch || includesIgnCase(alternates[i], filterText);
     //  }
-    }
-    return initialMatch || alternateMatch;
+    // }
+    // return initialMatch || alternateMatch;
+    return initialMatch;
   });
   filteredTrainees = sortedTrainees(filteredTrainees);
   rerenderTable();
